@@ -1,0 +1,63 @@
+.navbar_toggle-btn{
+    position: absolute;
+    top: 14px;
+    right: 32px;
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1318px) {
+    .inner{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar_box{
+        display: block;
+    }
+    .navbar_toggle-btn{
+        display: block;
+    }
+    .showMenu{
+        display: block !important;
+        
+    }
+    .navbar_menu{
+        display: none;
+        /* background-color: white; */
+    }
+    .navbar_menu_list{
+        display: flex;
+        /* background-color: aqua; */
+        flex-direction: column;
+        margin: unset;
+        padding: unset;
+        color: white;
+
+    }
+    .navbar_menu_item{
+        font-size: 29px;
+        text-align: center;
+        margin: 6px 0px;
+    }
+ /* -------------------- */
+
+    .my_info_part__top, .my_info_part__bottom ,.about_majors {
+        flex-direction: column;
+    }
+
+    .home-inner{
+        padding: 0px 50px;
+    }
+    /* ------------ */
+    
+/* 
+    .project_list{
+        display: block;
+    } */
+}
