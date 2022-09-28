@@ -141,6 +141,9 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     /* align-items: center; */
 }
 
+.home__avatar{
+    width: 100px;
+}
 .home_description{
     display: inline;
     text-align: center;
