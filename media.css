@@ -14,6 +14,37 @@
     .inner{
         width: auto;
     }
+    /* -------------------------------  */
+    .my_info_part{
+        width: 227px;
+    }
+    .major_front , 
+    .major_back, 
+    .major_certificate,
+    .major_version,
+    .major_Deployment{
+        width: 230px;
+    }
+    .home-inner{
+        padding: 0px 50px;
+    }
+    /* ---------------------------------- */
+    .project_contents {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    
+    .project_contents_img {
+        width: 100%;
+        height: 600px;    
+        border-radius: 24px;
+ 
+    }
+    .project_contents_text {
+        width: 100%;
+        border-radius: 24px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -56,32 +87,22 @@
     }
     /* ------------ */
     .project_contents {
-        flex-direction: column;
-        justify-content: center;
+        /* 중복 */
+        /* flex-direction: column;
+        justify-content: center; */
         width: 28%;
     }
     
     .project_contents_img {
-        width: 100%;
-        /* display: flex; */
-        /* text-align: center; */
-        /* margin: 30px; */
-        /* object-fit: contain; */
-        /* background-color: rgb(236, 125, 147); */
-       
-        border-radius: 24px;
+        /* 중복 */
+        /* width: 100%; */
+        height: 400px;    
+        /* border-radius: 24px; */
  
     }
     .project_contents_text {
-
-        width: 100%;
-
-        border-radius: 24px;
+        /* 중복 */
+        /* width: 100%;
+        border-radius: 24px; */
     }
-    
-    
-/* 
-    .project_list{
-        display: block;
-    } */
 }

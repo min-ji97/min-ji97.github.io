@@ -179,7 +179,6 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 350px;
     margin: 20px 10px;
     /* margin: 20px; */
@@ -452,16 +451,6 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 
 
 }
-.horizontal{
-    /* 
-    background:  repeat url(images/배경화면임시폴더/skyline-g9b1e5323c_1920.jpg) 0 0; */
-    
-}
-.projects{
-    /* width: auto; */
-    /* margin: auto; */
-  
-}
 
 .project_list{
     /* my project 스크롤을 수평으로 할 때 display:flex , row 를 줬었음..! */
@@ -475,14 +464,6 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     align-items: center;
     margin: 0px 30px;
     white-space: nowrap;
-
-    /* padding: 30px; */
-    /* width: 100%;     */
-}
-
-.my_project:first-child{
-    /* margin-left: 150px; */
-   
 }
 
 .project_title{
@@ -490,9 +471,6 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     font-weight: bold;
     margin: 30px 0px 20px 0px;
 }
-
-
-
 
 .project_contents{
     display: flex;
@@ -502,11 +480,11 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     justify-content: space-around;
     width: 100%;
     text-align: center;
-
 }   
+
 .project_contents_img{
     width: 60%;
-    height: 600px;
+    height: 700px;
     text-align: center;
     /* margin: 30px; */
     /* object-fit: contain; */
@@ -523,15 +501,6 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     /* width: 100%;  */
     /* margin: auto; */
 }
-
-/* .swiper_second img{
-    width: 200px;
-}
-.carousel-item img{
-    object-fit: cover;
-    display: block;
-    width: 100px;
-} */
 
 .project_contents_text{
     box-sizing: border-box;
@@ -555,9 +524,30 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     /* display: inline-block; */
     font-size: 40px;
 }
-.link-box i:hover{
+/* .link-box i:hover{
     color: #8583e5;
     transition: all 0.5s ease;
+} */
+.readme-btn{
+    display: inline-block;
+    width: 150px;
+    height: 46px;
+    border: 3px solid #44423f;
+    background-color: transparent;
+    color: #44423f;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.readme-btn:hover{
+    color: #ffffff;
+    font-weight: bold;
+    border: rgb(124, 175, 131);
+    background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    /* background: linear-gradient(-225deg, #DFFFCD 0%, #5ca077 48%, #000000 100%); */
+    transition: all ease 0.5s;
+    
 }
 
 .swiper{
@@ -672,7 +662,8 @@ section.horizontal .animation-wrap .item:nth-child(4n+4) {
 .contacts i{
     font-size: 50px;
     padding: 20px;
-    color: #c0f9ba;
+    color: rgb(155 155 155);
+    /* color: #c0f9ba; */
     
 
 }
@@ -698,9 +689,12 @@ section.horizontal .animation-wrap .item:nth-child(4n+4) {
     text-align: center;
     /* color: rgb(199, 197, 197); */
     /* background: linear-gradient(60deg, #abecd6 0%, #fbed96 100%); */
-    background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
-    color: transparent;
-    -webkit-background-clip: text;
+    /* background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
+    color: rgb(155 155 155);
+
+    /* color: transparent;
+    -webkit-background-clip: text; */
+
     /* margin-top: 30px; */
 }
 
