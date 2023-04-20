@@ -408,11 +408,12 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     transition: all ease 3s;
     width: 0%;
 }
-.skill_value:hover{
+/*  */
+/* .skill_value:hover{
     background: rgb(219, 255, 205);
 
     transition: all ease 1s;
-}
+} */
 
 /* .skill--width--90{
     width: 90;

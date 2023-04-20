@@ -24,31 +24,38 @@ document.addEventListener('scroll',()=>{
     }
 });
 
+// 반응형 햄버거바 클릭시 메뉴 보이게 하기
+
+const navToggleBtn = document.querySelector('.navbar_toggle-btn');
+const navbarMenu = document.querySelector('.navbar_menu');
+
+navToggleBtn.addEventListener('click',()=>{
+  navbarMenu.classList.toggle('showMenu');
+
+});
 
  // init Swiper:
-  var swiper = new Swiper('.swiper', {
-   // configure Swiper to use modules
-  // direction: 'vertical',
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
+  const swiper = new Swiper('.swiper', {
+    // configure Swiper to use modules
+    // direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
 
-  //  modules: [Navigation, Pagination],
-  pagination: {
-    el : '.swiper-pagination',
-    clickable: true,
-  },
+    //  modules: [Navigation, Pagination],
+    pagination: {
+      el : '.swiper-pagination',
+      clickable: true,
+    },
 
-  navigation: {
-    prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next',
-  },
-  scrollbar : {
-    el : '.swiper-scrollbar'
-  },
-
-
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
  });
+
+
+////////////////////////////////
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -80,7 +87,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 ///////////////////////////////여기까지 
 
-
 const t2 = gsap.timeline()
   .to('.skill_value-html',{width:'90%', ease: 'power2.out', duration: 0.1})
   .to('.skill_value-css', {width:'90%', duration: 0.1})
@@ -107,14 +113,3 @@ const st = ScrollTrigger.create({
  
   // ease: 'none',
 });
-
-
-// 반응형 햄버거바 클릭시 메뉴 보이게 하기
-
-const navToggleBtn = document.querySelector('.navbar_toggle-btn');
-const navbarMenu = document.querySelector('.navbar_menu');
-
-navToggleBtn.addEventListener('click',()=>{
-  navbarMenu.classList.toggle('showMenu');
-
-})
