@@ -8,9 +8,9 @@ const toggleBtn = document.querySelector('.navbar_toggle-btn');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll',()=>{
-    if(window.scrollY > navbarHeight){
+    if((window.scrollY > navbarHeight)){
       navbar.classList.add('background--dark' , 'transition--1s');
-      toggleBtn.classList.add('color--dark', 'transition--1s');
+      // toggleBtn.classList.add('color--dark', 'transition--1s');
       navbar_text.forEach((item)=>{
         item.classList.add('color--white' ,'transition--1s');
       })
@@ -24,13 +24,16 @@ document.addEventListener('scroll',()=>{
     }
 });
 
+
 // 반응형 햄버거바 클릭시 메뉴 보이게 하기
 
 const navToggleBtn = document.querySelector('.navbar_toggle-btn');
 const navbarMenu = document.querySelector('.navbar_menu');
 
 navToggleBtn.addEventListener('click',()=>{
+  navbar.classList.add('background--dark' , 'transition--1s');
   navbarMenu.classList.toggle('showMenu');
+ 
 
 });
 

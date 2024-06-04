@@ -8,6 +8,8 @@
     cursor: pointer;
     display: none;
     z-index: 10;
+    border: none;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 1318px) {
@@ -48,8 +50,18 @@
 }
 
 @media screen and (max-width: 800px) {
+    #navbar{
+        /* background-color: var(--navbar-color); */
+        /* color: white; */
+    }
+    #navbar,
+    #navbar .navbar_logo a,
+    #navbar .navbar_menu_list li a {
+        color: white;
+    }
     .navbar_box{
         display: block;
+        
     }
     .navbar_toggle-btn{
         display: block;
@@ -64,12 +76,10 @@
     }
     .navbar_menu_list{
         display: flex;
-        /* background-color: aqua; */
         flex-direction: column;
         margin: unset;
         padding: unset;
         color: white;
-
     }
     .navbar_menu_item{
         font-size: 29px;
@@ -92,13 +102,13 @@
     }
 
     .home_title{
-        color: purple;
+        /* color: purple; */
     }
     h2.home_description{
-        color: red;
+        /* color: red; */
     }
     h3.home_description{
-        color: yellow;
+        /* color: yellow; */
     }
 
     /* ------------ */

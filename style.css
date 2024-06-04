@@ -10,6 +10,12 @@ body{
     overflow-x: hidden;
     /* cursor: none; */
 }
+
+:root{
+    --navbar-color :rgb(41, 40, 40);
+}
+
+
 .inner{
     width: 1300px;
     margin: auto; 
@@ -44,9 +50,13 @@ li{
 .color--dark{
     color: rgb(41, 40, 40) !important;
 }
+
 .transition--1s{
     transition: all ease 1s;
 }
+
+
+
 
 
 /* Nav Bar */
@@ -56,9 +66,7 @@ li{
     width: 100%;
     background-color: transparent;   
 }
-/* .position--fixed{ 이거 어디다 쓴거지.... 아이돈노우..
-    position: fixed;
-} */
+
 .navbar_box{
     /* background-color: beige; */
     display: flex;
@@ -122,7 +130,6 @@ li{
     flex-direction: column;
     align-items: center;
 }
-
 
 
 #home img{
